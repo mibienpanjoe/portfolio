@@ -10,7 +10,7 @@ import useWindowStore from "#store/window.js";
 
 const Finder = () => {
     const { activeLocation , setActiveLocation } = useLocationStore();
-    const {openWindow} = useWindowStore ;
+    const {openWindow} = useWindowStore();
 
     const  openItem = (item) => {
         if(item.fileType === "pdf"){
@@ -49,12 +49,12 @@ const Finder = () => {
             </div>
 
             <ul className="content">
-                {activeLocation.children.map((item) => (
+                {activeLocation?.children?.map((item) => (
                     <li key={item.id} className={item.position} onClick={()=> openItem(item)}>
                         <img src={item.icon} alt={item.name} />
                         <p>{item.name}</p>
                     </li>
-                ))}
+                )) ?? <li>No items to display</li>}
             </ul>
         </div>
 
