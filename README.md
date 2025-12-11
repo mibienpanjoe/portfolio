@@ -1,6 +1,6 @@
 ![Project overview](public/images/overview.png)
 
-# macOS Portfolio
+# Portfolio Website
 
 A personal portfolio website presented as a macOS‑inspired desktop. It features a dynamic Dock with magnification, draggable app windows, smooth animations, and multiple built‑in "apps" (Terminal, Safari/Blog, Finder, Resume, Photos, Contact, etc.) to showcase projects, experience, and links — all inside a playful, familiar UI.
 
