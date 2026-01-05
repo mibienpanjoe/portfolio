@@ -36,7 +36,7 @@ const Safari = () => {
         <div className="blog">
             <h2>My developer blog</h2>
 
-            <div className="space-y-6">
+            { /* <div className="space-y-6">
                 {blogPosts.map(({id ,link,date, title , image }) => (
                     <div key={id} className="blog-post">
                         <div className="col-span-2">
@@ -51,7 +51,9 @@ const Safari = () => {
                         </div>
                     </div>
                 ))}
-            </div>
+            </div> */ }
+
+            <h3 className="text-lg text-gray-500 "> Blog coming soon stay tune</h3>
         </div>
     </>);
 }
