@@ -27,6 +27,10 @@ const WindowWrapper = ( Component , windowKey) => {
             const el = ref.current;
             if(!el) return () => {};
 
+            // Don't enable dragging on mobile (< 640px)
+            const isMobile = window.innerWidth < 640;
+            if (isMobile) return () => {};
+
             const [instance] = Draggable.create(el , {onPress: ()=>{
                 focusWindow(windowKey);
                 }})
