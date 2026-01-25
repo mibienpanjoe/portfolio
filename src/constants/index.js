@@ -49,6 +49,12 @@ const dockApps = [
         canOpen: true,
     },
     {
+        id: "chat",
+        name: "Chat",
+        icon: "chat.png", 
+        canOpen: true,
+    },
+    {
         id: "contact",
         name: "Contact", // or "Get in touch"
         icon: "contact.png",
@@ -65,12 +71,6 @@ const dockApps = [
         id: "safari",
         name: "Articles", // was "Safari"
         icon: "safari.png",
-        canOpen: true,
-    },
-    {
-        id: "chat",
-        name: "Chat",
-        icon: "chat.png", 
         canOpen: true,
     },
 ];

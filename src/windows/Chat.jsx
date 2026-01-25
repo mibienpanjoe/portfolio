@@ -46,7 +46,7 @@ const Chat = () => {
       {/* Header */}
       <div className="w-full bg-gray-100 border-b p-3 flex items-center justify-between rounded-t-xl" id="window-header">
          <WindowControls target="chat" />
-         <span className="font-semibold text-gray-700">Chat with AI</span>
+         <span className="font-semibold text-gray-700">Ask about Me</span>
          <div className="w-14"></div> {/* Spacer for centering title */}
       </div>
 

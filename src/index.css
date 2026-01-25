@@ -90,11 +90,17 @@ body {
     }
 
     .dock-icon {
+      /* size-12 for mobile was requested earlier, keeping size-13 as user edited */
       @apply size-14 3xl:size-20 cursor-pointer max-sm:size-13;
 
       img {
-        @apply object-cover object-center;
+        @apply object-contain object-center size-full; 
       }
+    }
+
+    /* Specific adjustment for Chat icon to make it fit visually */
+    .dock-icon[aria-label="Chat"] img {
+      @apply scale-[0.85];
     }
   }
 

@@ -1,6 +1,5 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-//import { navLinks, bio, portfolio } from "../constants"; // We'll need to check what specifically to import
 import { locations } from "../constants";
 
 // Initialize Gemini
