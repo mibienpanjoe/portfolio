@@ -318,7 +318,7 @@ body {
     @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl max-sm:fixed max-sm:inset-0 max-sm:w-full max-sm:h-full max-sm:rounded-none max-sm:top-0 max-sm:left-0;
 
     .sidebar {
-      @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3 max-sm:hidden;
+      @apply w-48 bg-gray-50 border-r border-gray-200 flex flex-col p-5 space-y-3 max-sm:w-36 max-sm:p-2;
 
       h3 {
         @apply text-xs font-medium text-gray-400 mb-1;
@@ -336,7 +336,11 @@ body {
         }
 
         li {
-          @apply flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors;
+          @apply flex items-center gap-2 px-3 py-2 rounded-md cursor-pointer transition-colors max-sm:px-2;
+
+          p {
+            @apply block;
+          }
         }
       }
     }
