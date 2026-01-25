@@ -5,6 +5,7 @@
 A personal portfolio website presented as a macOS‑inspired desktop. It features a dynamic Dock with magnification, draggable app windows, smooth animations, and multiple built‑in "apps" (Terminal, Safari/Blog, Finder, Resume, Photos, Contact, etc.) to showcase projects, experience, and links — all inside a playful, familiar UI.
 
 ## Features
+
 - macOS‑style desktop experience with Navbar, Welcome screen, Dock, and floating windows
 - Dock magnification and hover effects powered by GSAP
 - Draggable, focusable windows with z‑index management (bring to front on focus)
@@ -16,19 +17,23 @@ A personal portfolio website presented as a macOS‑inspired desktop. It feature
   - Text & Image: simple content viewers
   - Photos: gallery of selected images
   - Contact: social links and ways to reach me
+  - Chat: AI assistant powered by Gemini (answer questions about me)
 - State management for window open/close/focus
 - Responsive layout with Tailwind CSS
 
 ## Tech Stack
+
 - React 19 + Vite 7
 - Tailwind CSS 4
 - GSAP 3 (`gsap` + `Draggable` plugin) and `@gsap/react`
 - Zustand (with `immer` middleware) for state
+- `@google/generative-ai` for Gemini AI integration
 - `lucide-react` icons
 - `react-pdf` for viewing the resume PDF
 - Utilities: `dayjs`, `clsx`, `react-tooltip`
 
 ## Project Structure
+
 ```
 macos-portfolio/
 ├─ index.html
@@ -64,7 +69,9 @@ macos-portfolio/
 ```
 
 ### Path Aliases
+
 Configured in `vite.config.js` for clean imports:
+
 - `#components` → `src/components`
 - `#windows` → `src/windows`
 - `#constants` → `src/constants`
@@ -72,27 +79,39 @@ Configured in `vite.config.js` for clean imports:
 - `#hoc` → `src/hoc`
 
 ## Quick Start
+
 Prerequisites:
+
 - Node.js 18+ (recommended LTS)
 - npm 9+ (or pnpm/yarn, adjust commands accordingly)
 
 Install dependencies:
+
 ```
 npm install
 ```
 
+Create a `.env` file for the AI feature:
+
+```bash
+VITE_GEMINI_API_KEY=your_gemini_api_key
+```
+
 Start the dev server:
+
 ```
 npm run dev
 ```
+
 Vite will print a local URL (typically `http://localhost:5173`). Open it in your browser.
 
-
 ## Acknowledgements
+
 - Inspired by macOS UI design and interactions
 - Icons via `lucide-react`
 - Animations via GSAP
-- Thanks to JS-Mastery 
+- Thanks to JS-Mastery
 
 ## License
+
 This is a personal portfolio project. If you’d like to reuse parts of it, please give attribution. For commercial use, contact me.
