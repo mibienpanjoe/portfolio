@@ -60,10 +60,13 @@ macos-portfolio/
    │  ├─ Text.jsx
    │  ├─ Image.jsx
    │  ├─ Photos.jsx
+   │  ├─ Chat.jsx
    │  └─ index.js                 # Barrel exports
    ├─ store/
    │  └─ window.js                # Zustand store for window state & z-index
    ├─ constants/                  # Dock apps, links, initial z-index, etc.
+   ├─ utils/
+   │  └─ gemini.js                # RAG & Gemini AI logic
    └─ hoc/
       └─ WindowWrapper.jsx        # HOC to wrap components into movable windows
 ```
