@@ -40,7 +40,7 @@ body {
     @apply flex justify-between items-center bg-white/50 backdrop-blur-3xl p-2 px-5 select-none;
 
     div {
-      @apply flex items-center max-sm:w-full max-sm:justify-center gap-5;
+      @apply flex items-center max-sm:w-full max-sm:justify-center gap-5 max-sm:gap-2;
 
       &:last-child {
         @apply max-sm:hidden;
@@ -67,14 +67,14 @@ body {
   }
 
   #welcome {
-    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:w-full max-sm:px-6 max-sm:top-1/3;
+    @apply text-gray-200 flex flex-col justify-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none max-sm:w-full max-sm:px-6 max-sm:text-center;
 
     p {
-      @apply max-sm:text-lg;
+      @apply max-sm:text-sm;
     }
 
     h1 {
-      @apply max-sm:text-5xl;
+      @apply max-sm:text-2xl;
     }
   }
 
@@ -90,7 +90,7 @@ body {
     }
 
     .dock-icon {
-      @apply size-14 3xl:size-20 cursor-pointer max-sm:size-10;
+      @apply size-14 3xl:size-20 cursor-pointer max-sm:size-13;
 
       img {
         @apply object-cover object-center;
