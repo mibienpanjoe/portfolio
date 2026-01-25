@@ -1,13 +1,11 @@
 import Terminal from './Terminal';
 import Safari from './Safari';
-import Resume from "#windows/Resume.jsx";
-import Finder from "#windows/Finder.jsx";
-import Text from "#windows/Text.jsx";
-import Image from "#windows/Image.jsx";
-import Contact from "#windows/Contact.jsx";
-import Photos from "#windows/Photos.jsx";
+import Resume from "./Resume";
+import Finder from "./Finder";
+import Text from "./Text";
+import Image from "./Image";
+import Contact from "./Contact";
+import Photos from "./Photos";
+import Chat from "./Chat";
 
-
-
-
-export { Terminal , Safari , Resume , Finder , Text, Image , Contact, Photos};
+export { Terminal , Safari , Resume , Finder , Text, Image , Contact, Photos, Chat};

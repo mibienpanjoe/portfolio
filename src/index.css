@@ -378,6 +378,14 @@ body {
     }
   }
 
+  #chat {
+    @apply w-md h-[600px] absolute top-20 left-1/2 -translate-x-1/2 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden max-sm:fixed max-sm:inset-0 max-sm:w-full max-sm:h-full max-sm:rounded-none max-sm:top-0 max-sm:left-0 max-sm:translate-x-0;
+
+    #window-header {
+      @apply bg-gray-100 border-b border-gray-200;
+    }
+  }
+
   #home {
     @apply relative z-0 max-sm:hidden;
 

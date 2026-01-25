@@ -68,10 +68,10 @@ const dockApps = [
         canOpen: true,
     },
     {
-        id: "trash",
-        name: "Archive", // was "Trash"
-        icon: "trash.png",
-        canOpen: false,
+        id: "chat",
+        name: "Chat",
+        icon: "chat.png", 
+        canOpen: true,
     },
 ];
 
@@ -416,6 +416,7 @@ const WINDOW_CONFIG = {
     terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
     imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    chat: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };

@@ -31,7 +31,10 @@ const WindowWrapper = ( Component , windowKey) => {
             const isMobile = window.innerWidth < 640;
             if (isMobile) return () => {};
 
-            const [instance] = Draggable.create(el , {onPress: ()=>{
+            const header = el.querySelector("#window-header");
+            const [instance] = Draggable.create(el , {
+                trigger: header || el,
+                onPress: ()=>{
                 focusWindow(windowKey);
                 }})
             return ()=>instance.kill();
