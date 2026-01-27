@@ -1,0 +1,12 @@
+node_modules
+dist
+.git
+.env
+.DS_Store
+src/aws-exports.js
+# Add any other local/temp files here
+coverage
+junit.xml
+npm-debug.log
+yarn-error.log
+.vscode
